@@ -1,0 +1,78 @@
+>>> string="I love pytohn"
+>>> string
+'I love pytohn'
+>>> string[-1]
+'n'
+>>> string[3:4]
+'o'
+>>> string[:4]
+'I lo'
+>>> string[::]
+'I love pytohn'
+>>> string[::-1]
+'nhotyp evol I'
+>>> string[::8]
+'Iy'
+>>> string[::18]
+'I'
+>>> ":".join(string)
+'I: :l:o:v:e: :p:y:t:o:h:n'
+>>> ":".join(string.split(" "))
+'I:love:pytohn'
+>>> ":".join(string.split("y"))
+'I love p:tohn'
+>>> ":".join(string.split("y "))
+'I love pytohn'
+>>> ":".join(string.split(""))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: empty separator
+>>> ":".join(string.split(","))
+'I love pytohn'
+>>> ":".join(string.split("n"))
+'I love pytoh:'
+>>> ":".join(string.split("n "))
+'I love pytohn'
+>>> string.strip()
+'I love pytohn'
+>>> string.strip(':')
+'I love pytohn'
+>>> string.strip(' ')
+'I love pytohn'
+>>> string.strip('l')
+'I love pytohn'
+>>> string.join('l')
+'l'
+>>> string
+'I love pytohn'
+>>> string1="I love python  "
+>>> string1
+'I love python  '
+>>> string1.strip()
+'I love python'
+>>> string1.strip('love')
+'I love python  '
+>>> string1.strip('I ')
+'love python'
+>>> string1.strip('I')
+' love python  '
+>>> string1.strip('I')
+' love python  '
+>>> string1.strip('l')
+'I love python  '
+>>> string1.strip('l ')
+'I love python'
+>>> string2="love is good"
+>>> string2
+'love is good'
+>>> string2.strip('is ')
+'love is good'
+>>> string2.strip('l ')
+'ove is good'
+>>> string2.strip('love ')
+'is good'
+>>> string2.strip('is ')
+'love is good'
+>>> string2.strip('good ')
+'love is'
+
